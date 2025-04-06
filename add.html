@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Data</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view.html">View Data</a></li>
+                <li><a href="add.html">Add Data</a></li>
+                <li><a href="modify.html">Modify Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="addForm">
+            <div>
+                <label for="dataKey">Data Key (Name):</label>
+                <input type="text" id="dataKey" name="dataKey" required>
+            </div>
+            <div>
+                <label for="dataValue">Data Value:</label>
+                <input type="text" id="dataValue" name="dataValue" required>
+            </div>
+            <button type="submit">Add Data</button>
+        </form>
+        <p id="feedback"></p>
+    </main>
+    <footer>
+        <p>Simple Web App Example</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

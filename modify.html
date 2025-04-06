@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modify Existing Data</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view.html">View Data</a></li>
+                <li><a href="add.html">Add Data</a></li>
+                <li><a href="modify.html">Modify Data</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <label for="selectDataToModify">Select Data Key to Modify:</label>
+            <select id="selectDataToModify" name="selectDataToModify">
+                <option value="">--Select Key--</option>
+            </select>
+        </div>
+        <div id="editSection" style="display: none;">
+            <label for="modifyValue">New Value:</label>
+            <input type="text" id="modifyValue" name="modifyValue">
+            <button id="saveChangesButton">Save Changes</button>
+            <button id="deleteItemButton">Delete Item</button>
+        </div>
+         <p id="feedback"></p>
+    </main>
+    <footer>
+        <p>Simple Web App Example</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

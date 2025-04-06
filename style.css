@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+input[type="text"], select {
+    width: 95%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#deleteItemButton {
+    background-color: #d9534f;
+}
+
+#deleteItemButton:hover {
+    background-color: #c9302c;
+}
+
+
+#dataList {
+    list-style: square;
+    padding-left: 20px;
+}
+
+#dataList li {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+#feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+}
