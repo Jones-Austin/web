@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const API_BASE_URL = 'https://web-uwen.onrender.com';
+    const API_BASE_URL = 'https://web-uwen.onrender.com/api/data';
 
     const feedback = document.getElementById('feedback');
     const addForm = document.getElementById('addForm');
