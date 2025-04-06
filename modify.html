@@ -26,8 +26,14 @@
             </select>
         </div>
         <div id="editSection" style="display: none;">
+            <input type="hidden" id="modifyItemId" name="modifyItemId">
+        
+            <label for="modifyKey">Key:</label>
+            <input type="text" id="modifyKey" name="modifyKey" readonly> 
+        
             <label for="modifyValue">New Value:</label>
             <input type="text" id="modifyValue" name="modifyValue">
+        
             <button id="saveChangesButton">Save Changes</button>
             <button id="deleteItemButton">Delete Item</button>
         </div>
