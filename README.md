@@ -135,7 +135,7 @@ This project is licensed under the MIT License.
 ```text
 MIT License
 
-Copyright (c) [Year] [Your Name or Organization]
+Copyright (c) 2025 Point Park university 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
