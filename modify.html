@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brands - Modify</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Car Brand Management</h1>
+        <nav>
+            <a href="index.html">View Brands</a>
+            <a href="add.html">Add Brand</a>
+            <a href="modify.html">Modify Brand</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Modify Existing Car Brand</h2>
+        <form id="modify-brand-form">
+            <div class="form-group">
+                <label for="brand-id">Brand ID to Modify:</label>
+                <input type="number" id="brand-id" name="id" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="new-brand-name">New Brand Name:</label>
+                <input type="text" id="new-brand-name" name="name" required>
+            </div>
+            <button type="submit">Update Brand</button>
+        </form>
+        <div id="status-message" class="status"></div>
+        <p class="note">Note: You can find the Brand ID on the 'View Brands' page.</p>
+    </main>
+
+    <!-- Custom JavaScript for this page -->
+    <script src="./js/modify.js"></script>
+</body>
+</html>

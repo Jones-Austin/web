@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brands - Add</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Car Brand Management</h1>
+        <nav>
+            <a href="index.html">View Brands</a>
+            <a href="add.html">Add Brand</a>
+            <a href="modify.html">Modify Brand</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Add New Car Brand</h2>
+        <form id="add-brand-form">
+            <div class="form-group">
+                <label for="brand-name">Brand Name:</label>
+                <input type="text" id="brand-name" name="name" required>
+            </div>
+            <button type="submit">Add Brand</button>
+        </form>
+        <div id="status-message" class="status"></div>
+    </main>
+
+    <!-- Custom JavaScript for this page -->
+    <script src="./js/add.js"></script>
+</body>
+</html>
