@@ -1,3 +1,4 @@
+/* Basic Styles (Keep previous styles for body, header, nav, main, h2, forms, buttons, status) */
 body {
     font-family: sans-serif;
     line-height: 1.6;
@@ -68,12 +69,13 @@ form {
 }
 
 .form-group input[type="text"],
-.form-group input[type="number"] {
+.form-group input[type="number"],
+.form-group select { /* Added select */
     width: 100%;
     padding: 0.6rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box;
 }
 
 button[type="submit"] {
@@ -88,9 +90,15 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover:not(:disabled) { /* Apply hover only when not disabled */
     background: #4cae4c;
 }
+
+button[type="submit"]:disabled { /* Style for disabled button */
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
 
 /* Status Messages */
 .status {
@@ -118,6 +126,52 @@ button[type="submit"]:hover {
 /* Grid.js Container */
 #grid-container {
     margin-top: 1rem;
+}
+
+/* Modal Styles (AC2) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px; /* Maximum width */
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-message {
+    margin-bottom: 1rem;
+    font-size: 1.1em;
 }
 
 .note {
