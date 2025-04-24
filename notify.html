@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brands - Send Notification</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Car Brand Management</h1>
+        <nav>
+            <a href="index.html">View Brands</a>
+            <a href="add.html">Add Brand</a>
+            <a href="modify.html">Modify Brand</a>
+            <a href="notify.html">Send Notification</a> <!-- Added Link -->
+        </nav>
+    </header>
+
+    <main>
+        <h2>Send a Browser Notification</h2>
+        <p>Create and send a custom notification to your browser.</p>
+
+        <form id="notify-form">
+            <div class="form-group">
+                <label for="notify-title">Notification Title:</label>
+                <input type="text" id="notify-title" name="title" placeholder="Enter a title (optional)">
+            </div>
+            <div class="form-group">
+                <label for="notify-message">Notification Message:</label>
+                <input type="text" id="notify-message" name="message" required placeholder="Enter the message content">
+            </div>
+             <div class="form-group">
+                <label for="notify-icon">Icon URL (Optional):</label>
+                <input type="text" id="notify-icon" name="icon" placeholder="e.g., https://example.com/icon.png">
+            </div>
+            <button type="submit" id="send-notify-btn">Send Notification</button>
+        </form>
+        <div id="status-message" class="status"></div> <!-- Status Area -->
+
+    </main>
+
+    <!-- Custom JavaScript for this page -->
+    <script src="./js/notify.js"></script>
+</body>
+</html>
